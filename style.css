@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --DarkGray: hsl(0, 0%, 55%);
+    --VeryDarkGray: hsl(0, 0%, 41%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--White);
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+nav {
+    background-image: url(images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 400px;
+    padding: 40px 10%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    color: var(--White);
+    font-weight: 300;
+}
+
+.hamburger {
+    display: none;
+}
+
+nav div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caja {
+    border: 2px solid var(--White);
+    width: 500px;
+    padding: 20px;
+}
+
+.caja p {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 1;
+}
+
+.opciones {
+    display: flex;
+    gap: 20px;
+}
+
+
+main,
+footer {
+    margin: 100px auto
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* gap: 50px; */
+}
+
+.informations {
+    position: relative;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+.gafas {
+    background-image: url(images/desktop/image-interactive.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    width: 600px;
+
+}
+
+.info {
+    background-color: var(--White);
+    padding: 60px;
+    height: 300px;
+    width: 400px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: start;
+}
+
+.info h1 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.info p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--DarkGray);
+}
+
+.creations {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+
+}
+
+.creation_title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.creation_title h1 {
+    font-weight: 200;
+}
+
+button {
+    text-transform: uppercase;
+    background-color: var(--White);
+    padding: 10px 40px;
+}
+
+.creation_sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sections {
+    display: flex;
+    gap: 20px;
+}
+
+.sections>section {
+    height: 400px;
+    width: 230px;
+    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sections>section>div>h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: var(--White);
+}
+
+.creation_sections .sections:nth-child(1)>section:nth-child(4)>div>h2 {
+    width: 100px;
+}
+
+.sections section {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.creation_sections .sections:nth-child(1) section:nth-child(1) {
+    background-image: url(images/desktop/image-deep-earth.jpg);
+
+}
+
+.creation_sections .sections:nth-child(1) section:nth-child(2) {
+    background-image: url(images/desktop/image-night-arcade.jpg);
+}
+
+.creation_sections .sections:nth-child(1) section:nth-child(3) {
+    background-image: url(images/desktop/image-soccer-team.jpg);
+}
+
+.creation_sections .sections:nth-child(1) section:nth-child(4) {
+    background-image: url(images/desktop/image-grid.jpg);
+}
+
+/* seccion inferior */
+.creation_sections .sections:nth-child(2) section:nth-child(1) {
+    background-image: url(images/desktop/image-from-above.jpg);
+}
+
+.creation_sections .sections:nth-child(2) section:nth-child(2) {
+    background-image: url(images/desktop/image-pocket-borealis.jpg);
+}
+
+.creation_sections .sections:nth-child(2) section:nth-child(3) {
+    background-image: url(images/desktop/image-curiosity.jpg);
+}
+
+.creation_sections .sections:nth-child(2) section:nth-child(4) {
+    background-image: url(images/desktop/image-fisheye.jpg);
+}
+
+.sections section div {
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.7));
+    padding: 30px
+}
+
+footer {
+    color: var(--White);
+    background-color: var(--Black);
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 40px 10%;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer div:nth-child(1) div {
+    flex-direction: row;
+}
+
+footer div:nth-child(1) {
+    align-items: start;
+}
+
+footer div:nth-child(2) {
+    align-items: end;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.icons img {
+    height: 20px;
+    width: 20px;
+}
+
+@media (width<1200px) {
+
+    .informations {
+        display: flex;
+        min-width: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gafas {
+        background-image: url(images/mobile/image-interactive.jpg);
+        height: 400px;
+        background-position: center;
+    }
+
+    .info {
+        height: 200px;
+
+        position: relative;
+        text-align: center
+    }
+
+    .sections {
+        flex-direction: column;
+    }
+
+    .sections>section {
+        /* min-width: 600px; */
+        height: 230px;
+        width: 40vh;
+        /* padding: 30px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        margin: 0 auto;
+    }
+
+
+    .creation_sections .sections:nth-child(1) section:nth-child(1) {
+        background-image: url(images/mobile/image-deep-earth.jpg);
+
+    }
+
+    .creation_sections .sections:nth-child(1) section:nth-child(2) {
+        background-image: url(images/mobile/image-night-arcade.jpg);
+    }
+
+    .creation_sections .sections:nth-child(1) section:nth-child(3) {
+        background-image: url(images/mobile/image-soccer-team.jpg);
+    }
+
+    .creation_sections .sections:nth-child(1) section:nth-child(4) {
+        background-image: url(images/mobile/image-grid.jpg);
+    }
+
+    /* seccion inferior */
+    .creation_sections .sections:nth-child(2) section:nth-child(1) {
+        background-image: url(images/mobile/image-from-above.jpg);
+    }
+
+    .creation_sections .sections:nth-child(2) section:nth-child(2) {
+        background-image: url(images/mobile/image-pocket-borealis.jpg);
+    }
+
+    .creation_sections .sections:nth-child(2) section:nth-child(3) {
+        background-image: url(images/mobile/image-curiosity.jpg);
+    }
+
+    .creation_sections .sections:nth-child(2) section:nth-child(4) {
+        background-image: url(images/mobile/image-fisheye.jpg);
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    footer div:nth-child(1) {
+        align-items: center;
+    }
+
+    footer div:nth-child(2) {
+        align-items: center;
+    }
+
+    footer div:nth-child(1)>div {
+        flex-direction: column;
+    }
+
+
+}
+
+@media (width<750px) {
+    .opciones {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 20px;
+    }
+}
