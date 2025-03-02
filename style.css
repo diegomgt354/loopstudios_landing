@@ -38,6 +38,7 @@ nav {
 
 .hamburger {
     display: none;
+    cursor: pointer;
 }
 
 nav div:nth-child(1) {
@@ -63,6 +64,10 @@ nav div:nth-child(1) {
     gap: 20px;
 }
 
+.opciones p:hover {
+    border-bottom: 1px solid var(--White);
+    cursor: pointer;
+}
 
 main,
 footer {
@@ -138,6 +143,7 @@ button {
     background-color: var(--White);
     padding: 10px 40px;
     border: 1px solid var(--Black);
+    cursor: pointer;
 }
 
 .segundo {
@@ -158,10 +164,19 @@ button {
 .sections>section {
     height: 400px;
     width: 230px;
+    cursor: pointer;
     /* padding: 30px; */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-end; */
+}
+
+.sections>section:hover>div>h2 {
+    color: var(--Black);
+}
+
+.sections>section:hover>div {
+    background: linear-gradient(rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5));
 }
 
 .sections>section>div>h2 {
@@ -216,7 +231,14 @@ button {
 
 .sections section div {
     background: linear-gradient(to bottom, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.7));
-    padding: 30px
+    padding: 30px;
+
+    height: 340px;
+    width: 170px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 footer {
@@ -239,6 +261,17 @@ footer div:nth-child(1) div {
     flex-direction: row;
 }
 
+footer div:nth-child(1) div p,
+footer div:nth-child(2) p {
+    padding-bottom: 10px;
+}
+
+footer div:nth-child(1) div p:hover {
+    padding-bottom: 9px;
+    border-bottom: 1px solid var(--White);
+    cursor: pointer;
+}
+
 footer div:nth-child(1) {
     align-items: start;
 }
@@ -248,15 +281,22 @@ footer div:nth-child(2) {
     justify-content: space-between;
 }
 
+
 .icons {
     display: flex;
     flex-direction: row;
-
 }
 
 .icons img {
     height: 20px;
     width: 20px;
+    padding-bottom: 10px;
+}
+
+.icons img:hover {
+    cursor: pointer;
+    padding-bottom: 9px;
+    border-bottom: 1px solid var(--White);
 }
 
 @media (width<1200px) {
@@ -297,6 +337,9 @@ footer div:nth-child(2) {
         margin: 0 auto;
     }
 
+    .sections>section div {
+        width: 640px;
+    }
 
     .creation_sections .sections:nth-child(1) section:nth-child(1) {
         background-image: url(images/mobile/image-deep-earth.jpg);
@@ -393,6 +436,7 @@ footer div:nth-child(2) {
 
     .sections>section div {
         padding: 10px;
+        width: 380px;
     }
 
     .sections>section h2 {
@@ -428,5 +472,7 @@ footer div:nth-child(2) {
     .creation_sections {
         margin-bottom: 30px;
     }
+
+
 
 }
