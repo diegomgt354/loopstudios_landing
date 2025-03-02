@@ -86,8 +86,8 @@ main {
     background-image: url(images/desktop/image-interactive.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 300px;
-    width: 300px;
+    height: 600px;
+    width: 600px;
 
 }
 
@@ -137,13 +137,11 @@ button {
     text-transform: uppercase;
     background-color: var(--White);
     padding: 10px 40px;
-    width: 140px;
 }
 
 .segundo {
     display: none;
 }
-
 
 .creation_sections {
     display: flex;
@@ -268,6 +266,7 @@ footer div:nth-child(2) {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 0 auto;
     }
 
     .gafas {
@@ -288,10 +287,8 @@ footer div:nth-child(2) {
     }
 
     .sections>section {
-        /* min-width: 600px; */
         height: 230px;
         width: 700px;
-        /* padding: 30px; */
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -397,5 +394,22 @@ footer div:nth-child(2) {
 
     .sections>section h2 {
         width: 200px;
+    }
+
+    .gafas {
+        height: 200px;
+        background-position: center;
+    }
+
+    .info {
+        background-color: var(--White);
+        padding: 60px 0;
+        height: 200px;
+        width: 400px;
+
+        /* position: absolute; */
+        right: 0;
+        bottom: 0;
+        /* text-align: start; */
     }
 }
