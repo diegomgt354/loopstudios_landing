@@ -86,8 +86,8 @@ main {
     background-image: url(images/desktop/image-interactive.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 600px;
-    width: 600px;
+    height: 300px;
+    width: 300px;
 
 }
 
@@ -137,7 +137,13 @@ button {
     text-transform: uppercase;
     background-color: var(--White);
     padding: 10px 40px;
+    width: 140px;
 }
+
+.segundo {
+    display: none;
+}
+
 
 .creation_sections {
     display: flex;
@@ -284,7 +290,7 @@ footer div:nth-child(2) {
     .sections>section {
         /* min-width: 600px; */
         height: 230px;
-        width: 40vh;
+        width: 700px;
         /* padding: 30px; */
         display: flex;
         flex-direction: column;
@@ -358,5 +364,38 @@ footer div:nth-child(2) {
         display: block;
         width: 30px;
         height: 20px;
+    }
+
+    .caja {
+        width: 200px;
+    }
+
+    .caja p {
+        font-size: 30px;
+    }
+
+    .primero {
+        display: none;
+    }
+
+    .segundo {
+        display: block;
+    }
+
+    .creations {
+        align-items: center;
+    }
+
+    .sections>section {
+        height: 100px;
+        width: 400px;
+    }
+
+    .sections>section div {
+        padding: 10px;
+    }
+
+    .sections>section h2 {
+        width: 200px;
     }
 }
